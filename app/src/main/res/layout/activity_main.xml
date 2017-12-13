@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.kabir.counter.MainActivity">
+
+    <LinearLayout
+        android:background="#bbbbff"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Counts:"
+            android:textSize="60sp"
+            android:textColor="#261099"
+            android:textStyle="italic"
+            android:fontFamily="times"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textSize="90sp"
+            android:id="@+id/displayVal"
+            />
+        <Button
+            android:background="#9699bb"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Add"
+            android:layout_marginTop="20dp"
+            android:onClick="add"
+            android:fontFamily="casual"
+            android:textSize="30sp"
+
+            />
+        <Button
+            android:background="#9699bb"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:text="Subtract"
+            android:onClick="subtract"
+            android:fontFamily="casual"
+            android:layout_marginTop="7dp"
+            android:textSize="30sp"
+            />
+        <Button
+            android:layout_marginTop="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="reset"
+            android:fontFamily="casual"
+            android:textStyle="bold"
+            android:onClick="reset"
+            android:textSize="19sp"
+            android:background="#9699bb"
+
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
